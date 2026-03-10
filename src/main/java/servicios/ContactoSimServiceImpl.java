@@ -20,8 +20,8 @@ public class ContactoSimServiceImpl implements InterfazContactoSim {
 
 	private DatosSolicitud solicitudProvisional;
 
-	// IMPORTANTE: CAMBIA ESTO POR LA IP/URL DE LA MÁQUINA DEL PROFESOR
-	private final String URL_BASE = "http://TU_IP_DEL_PROFESOR:PUERTO/grid?tok=";
+
+	private final String URL_BASE = "http://ip_teacher:puerto_ni_idea/grid?tok=";
 
 	@Override
 	public int solicitarSimulation(DatosSolicitud sol) {
