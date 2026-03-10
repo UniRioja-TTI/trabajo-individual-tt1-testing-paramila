@@ -1,5 +1,6 @@
 package com.tt1.trabajo;
 
+import modelo.DatosSimulation;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -68,5 +69,17 @@ public class SolicitudController {
         	}
         }
         return "formResult";
+    }
+    @GetMapping("/grid")
+    public String mostrarGrid(@RequestParam("tok") int tok, Model model) {
+        logger.info("Solicitando cuadrícula para el token: " + tok);
+
+        // Llamamos al servicio para descargar los datos de la VM
+        DatosSimulation datos = ics.descargarDatos(tok);
+
+        // Pasamos los datos a la vista web
+        model.addAttribute("datos", datos);
+
+        return "grid"; // Esto buscará el archivo grid.html
     }
 }
