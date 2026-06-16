@@ -3,6 +3,8 @@ package servicios;
 import interfaces.InterfazEnviarEmails;
 import modelo.Destinatario;
 import org.slf4j.Logger;
+import org.springframework.stereotype.Service;
+
 @Service
 public class ImplementacionEmails implements InterfazEnviarEmails {
     

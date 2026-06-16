@@ -4,6 +4,8 @@ import interfaces.InterfazContactoSim;
 import modelo.DatosSimulation;
 import modelo.DatosSolicitud;
 import modelo.Entidad;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -16,9 +18,9 @@ public class ImplementacionSimulacion implements InterfazContactoSim {
 
     public ImplementacionSimulacion() {
         List<Entidad> lista = new ArrayList<>();
-        Entidad cosa1 = new Entidad(1, "Pablo");
-        Entidad cosa2 = new Entidad(2, "Pedro");
-        Entidad cosa3 = new Entidad(3, "Alejandro");
+        Entidad cosa1 = new Entidad(1, "Pablo","Prueba1");
+        Entidad cosa2 = new Entidad(2, "Pedro","Prueba2");
+        Entidad cosa3 = new Entidad(3, "Alejandro","Prueba3");
         lista.add(cosa1);
         lista.add(cosa2);
         lista.add(cosa3);
