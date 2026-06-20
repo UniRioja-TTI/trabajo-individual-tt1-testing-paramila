@@ -5,6 +5,8 @@ import java.util.Map;
 public class DatosSolicitud {
 	private Map<Integer, Integer> nums;
 	
+	public DatosSolicitud() {}
+
 	public DatosSolicitud(Map<Integer,Integer> nums) {
 		this.nums = nums;
 	}

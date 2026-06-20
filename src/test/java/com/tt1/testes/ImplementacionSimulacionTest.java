@@ -1,4 +1,4 @@
-package tests;
+package com.tt1.testes;
 
 import servicios.ImplementacionSimulacion;
 import modelo.DatosSolicitud;
